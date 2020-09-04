@@ -1,0 +1,19 @@
+
+plugins{
+    id 'java'
+}
+sourceSets{
+    main{
+        java{
+            srcDirs = ['src']
+        }
+    }
+}
+jar{
+    manifest{
+        attributes 'Main-class':'httpServer'
+    }
+}
+sourceCompatibility='1.11'
+targetCompatibility='1.11'
+version='0.0.1'
